@@ -8,13 +8,16 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
+     * se crea los campos y las llaves primaria y foranea 
      */
     public function up(): void
     {
-        Schema::create('crearproyectos', function (Blueprint $table) {
-            $table->id();
-            $table->string("nombre_proyecto");
-            $table->timestamps();
+        Schema::create('proyectos', function (Blueprint $table) {
+            $table->char('nombre_proyecto', 40)->primary();
+            /**se crea la llave foranea que hace referencia al id de la table users  */
+            $table->unsignedBigInteger('users_id')->nullable();
+            $table->foreign('users_id')->references('id')->on('users')->onDelete('cascade');
+           
         });
     }
 

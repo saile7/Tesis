@@ -15,29 +15,29 @@
             </div>
             <div class="card-body">
                 <div class="row">
-                    <label form="interes1" class="col-sm-2 col-form-larabel"> primer intereses</label>
+                    <label form="interes" class="col-sm-2 col-form-larabel"> interes</label>
                     <div class="col-sm-7">
-                       <input type="text" class="form-control"name="interes1" placeholder="" autofocus> 
+                       <input type="text" class="form-control"name="interes" placeholder="" autofocus> 
+                    </div>
+                </div>
+                <!--<div class="row">
+                    <label form="interes" class="col-sm-2 col-form-larabel">segundo interes</label>
+                    <div class="col-sm-7">
+                       <input type="text" class="form-control"name="interes" placeholder="" autofocus> 
                     </div>
                 </div>
                 <div class="row">
-                    <label form="interes2" class="col-sm-2 col-form-larabel">segundo interes</label>
+                    <label form="interes" class="col-sm-2 col-form-larabel">tercer interes</label>
                     <div class="col-sm-7">
-                       <input type="text" class="form-control"name="interes2" placeholder="" autofocus> 
+                       <input type="text" class="form-control"name="interes" placeholder="" autofocus> 
                     </div>
-                </div>
-                <div class="row">
-                    <label form="interes3" class="col-sm-2 col-form-larabel">tercer interes</label>
-                    <div class="col-sm-7">
-                       <input type="text" class="form-control"name="interes3" placeholder="" autofocus> 
-                    </div>
-                </div>
+                </div> -->
             
                 <!-- inicio del footer -->
              <div class="card-footer ml-auto mr-auto">
                 <button type="submit" class="btn btn-primary">Enviar Intereses</button> 
                <div class="row">
-                <div class="col-12 text-right">
+                <div class="col-12 text-right"> 
                     <!--<a href="{{route('involucrados.create')}}" class="btn btn-sm btn-facebook">siguiente</a>-->
                 </div>
                </div> 

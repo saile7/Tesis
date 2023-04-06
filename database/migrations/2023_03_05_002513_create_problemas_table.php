@@ -12,13 +12,15 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('problemas', function (Blueprint $table) {
-            $table->id();
-            $table->string("problema1");
-            $table->string("problema2");
-            $table->string("problema3");
-            $table->timestamps();
+            /**bigIncrements crea una llave primaria incremental con un campo personalizado */
+            $table->bigIncrements('id_problema');
+            $table->string("problema")->nullable();
+            $table->unsignedBigInteger('id_involucrado')->nullable();
+            $table->char('nombre_extraido',20)->nullable();
+            $table->foreign('id_involucrado')->references('id_involucrado')->on('involucrado');
+            $table->foreign('nombre_extraido')->references('nombre_proyecto')->on('proyectos');
         });
-    }
+    } 
 
     /**
      * Reverse the migrations.

@@ -25,12 +25,12 @@
                 <!--fin de la alerta-->
                 <div class="row">
                    
-                    <label form="recurso1" class="col-sm-2 col-form-larabel">Recurso número 1</label>
+                    <label form="recurso" class="col-sm-2 col-form-larabel">Recurso número 1</label>
                     <div class="col-sm-7">
-                       <input type="text" class="form-control"name="recurso1" placeholder="" autofocus> 
+                       <input type="text" class="form-control"name="recurso" placeholder="" autofocus> 
                     </div>
                 </div>
-
+                <!--
                 <div class="row">
                     <label form="recurso2" class="col-sm-2 col-form-larabel">Recurso número 2</label>
                     <div class="col-sm-7">
@@ -42,7 +42,7 @@
                     <div class="col-sm-7">
                        <input type="text" class="form-control"name="recurso3" placeholder="" autofocus> 
                     </div>
-                </div>
+                </div>-->
                <!-- final del footer -->
                 <!-- inicio del footer -->
             <div class="card-footer ml-auto mr-auto">
@@ -50,12 +50,14 @@
                <div class="row">
                 <div class="col-12 text-right">
                     <a href="{{route('involucrados.create')}}" class="btn btn-sm btn-facebook">Agregar mas involucrados</a>
+                   
+                   <!--<button id="add-user-btn" onclick="addInvoluc()">Añadir más involucrados</button>-->
                 </div>
-               
+                
                </div> 
-        
+         
             </div>
-               <!-- fin del footer -->
+               <!-- fin del footer --> 
                <!-- inicio de otra-->
               
          </div>

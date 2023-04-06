@@ -13,7 +13,7 @@ class ProyectoController extends Controller
   
     public function index()
     {
-
+ 
       $proyectos = proyectos::all();
      return view('proyectos.nuevop');
     }
@@ -30,6 +30,6 @@ class ProyectoController extends Controller
      Crearproyecto::insert($datosProyecto);
      // return response()-> json($datosProyecto);
       return view('involucrados.create');
-
+ 
    }
 }

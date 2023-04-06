@@ -52,6 +52,9 @@ Route:: get('/recursos/recursop', action: [App\Http\Controllers\RecursosControll
 Route:: post('/recursos', action: [App\Http\Controllers\RecursosController::class, 'STORE'])
 ->name(name: 'recursos.store');
 
+/*Route:: get('recursos', action:[App\Http\Controllers\ProblemasController::class, 'funcionamiento'])
+->name(name: 'problemas.funcionamiento');*/
+
 Route:: get('/passwords/login', action: [App\Http\Controllers\LoginController::class, 'create'])
 ->name(name: 'login.index');
 

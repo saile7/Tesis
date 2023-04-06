@@ -3,16 +3,17 @@
 namespace App\Http\Controllers;
 
 use App\Models\Involucrados;
-use Illuminate\Http\Request;
+use Illuminate\Http\Request; 
 
 class InvolucradosController extends Controller
 {
+    
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $involucrados = involucrados::all();
+        $involucrados = involucrado::all();
      return view('involucrados.create');
     }
 
@@ -21,7 +22,8 @@ class InvolucradosController extends Controller
      */
     public function create()
     {
-        //
+        //con esto retornara a involucrados ceate cuando referencie a involucrados.create
+        return view('involucrados.create');
     }
 
     /**

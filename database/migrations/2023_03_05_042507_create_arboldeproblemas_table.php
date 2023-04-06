@@ -12,8 +12,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('arboldeproblemas', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->bigIncrements('id_arbol');
+            $table->string('problema')->nullable();
+            $table->unsignedBigInteger('id_problem')->nullable();
+            $table->char('nombre_extraido',40)->nullable();
+            $table->foreign('id_problem')->references('id_problema')->on('problemas');
+            $table->foreign('nombre_extraido')->references('nombre_proyecto')->on('proyectos');
         });
     }
 

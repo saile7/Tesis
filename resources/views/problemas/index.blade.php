@@ -14,18 +14,17 @@
                                     <table class="table">
                                         <thead class="text-primary">
                                             <tr>
-                                                <th>Problema</th>
-                                                <th>problema</th>
-                                                <th>Problema</th>
+                                                <th>Problemas del proyecto</th>
+                                                
                                             </tr>
                                         </thead>
                                         <tbody>
                                             @foreach ( $problemas as $problema)
+                                            
                                                 
                                             <tr>
-                                                <td>{{$problema-> problema1}}</td>
-                                                <td>{{$problema-> problema2}}</td>
-                                                <td>{{$problema-> problema3}}</td>
+                                                <td>{{$problema-> problema}}</td>
+                                                
                                             </tr>
                                         
                                             @endforeach

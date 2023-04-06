@@ -15,23 +15,23 @@
             </div>
             <div class="card-body">
                 <div class="row">
-                    <label form="problema1" class="col-sm-2 col-form-larabel">Problemas 1</label>
+                    <label form="problema" class="col-sm-2 col-form-larabel">Problemas 1</label>
                     <div class="col-sm-7">
-                       <input type="text" class="form-control"name="problema1" placeholder="" autofocus> 
+                       <input type="text" class="form-control"name="problema" placeholder="" autofocus> 
+                    </div>
+                </div>
+               <!-- <div class="row">
+                    <label form="problema" class="col-sm-2 col-form-larabel">Problemas 2</label>
+                    <div class="col-sm-7">
+                       <input type="text" class="form-control"name="problema" placeholder="" autofocus> 
                     </div>
                 </div>
                 <div class="row">
-                    <label form="problema2" class="col-sm-2 col-form-larabel">Problemas 2</label>
+                    <label form="problema" class="col-sm-2 col-form-larabel">Problemas 3</label>
                     <div class="col-sm-7">
-                       <input type="text" class="form-control"name="problema2" placeholder="" autofocus> 
+                       <input type="text" class="form-control"name="problema" placeholder="" autofocus> 
                     </div>
-                </div>
-                <div class="row">
-                    <label form="problema3" class="col-sm-2 col-form-larabel">Problemas 3</label>
-                    <div class="col-sm-7">
-                       <input type="text" class="form-control"name="problema3" placeholder="" autofocus> 
-                    </div>
-                </div>
+                </div>-->
             
                 <!-- inicio del footer -->
              <div class="card-footer ml-auto mr-auto">

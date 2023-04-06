@@ -10,7 +10,7 @@ class ProblemasController extends Controller
     
     public function index()
     {
-        $problemas['problemas']=Problemas::paginate(3);
+        $problemas['problemas']=Problemas::paginate(5);
         return view('problemas.index',$problemas);
     }
 
@@ -47,7 +47,7 @@ class ProblemasController extends Controller
      */
     public function edit(Problemas $problemas)
     {
-        //
+        
     }
 
     /**
